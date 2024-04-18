@@ -1,0 +1,366 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+   
+}
+
+.main_container{
+    display: flex;
+}
+.left-box{
+   border: 1px solid black;
+   width: 23%;
+   padding: 5px;
+   max-height: 80vw;
+  
+   
+ 
+  
+}
+
+.left-box > .home-box{
+    background-color:  #b3b3b320;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 20px;
+    color: darkgrey;
+    transition:  1s all;
+    position: sticky;
+    top: 5px;
+    z-index: 9000;
+
+   
+}
+.left-box > .home-box > ul > li:hover{
+    color: white;
+}
+
+.left-box > .home-box > .logo{
+    padding: 10px;
+   
+}
+
+.left-box > .home-box > ul{
+    padding: 4px;
+}
+.left-box > .home-box > ul> li{
+    list-style: none;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+
+}
+
+.library-box{
+
+    background-color:  #b3b3b320;;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 20px;
+    color: darkgrey;
+    transition:  1s all;
+    margin-top: 10px;
+    min-height: 42vw;
+    justify-content: space-between;
+    position: sticky;
+    top: 180px;
+    left: 0;
+
+}
+
+.library-box > .box1{
+    background-color: rgba(211, 211, 211, 0.087);
+    text-align: left;
+   margin-top: 25px;
+    border-radius: 7px;
+    color: white;
+    height: 130px;
+    padding: 15px;
+    font-size: 12px;
+    
+
+}
+.library-box > .box1 > button{
+    width: 144px;
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+}
+.library-box > .box1 > button:hover{
+    font-size: 17px;
+}
+
+
+
+footer > div > ul{
+    display:inline-flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 90px;
+    gap: 25px;
+}
+
+
+footer > div > ul > li {
+    list-style: none;
+   
+}
+footer > div > ul > li > a{
+   color: grey;
+   font-size: 15px;
+  text-decoration: none;
+
+}
+
+footer > div > button{
+   width: 130px;
+   padding: 10px;
+   font-size: 18px;
+   font-weight: 700;
+   border-radius: 20px;
+   background-color: black;
+   color: white;
+   margin-top: 40px;
+   border: 1px solid grey;
+   transition: all 0.5s;
+   cursor: pointer;
+}
+footer > div > button:hover{
+    border: 2px solid white;
+}
+
+/* right box css starts from here */
+.right-box{
+    
+    width: 77%;
+    margin: 5px;
+    height: 55vw;
+   
+
+}
+
+.header{
+    height: 70px;
+    background-color: #b3b3b320;
+    width: 100%;
+    display: flex;    
+    justify-content: space-between;
+    position: sticky;
+    top: 5px;
+    z-index: 99999;
+   
+}
+.header > .headerimg{
+    margin: 21px;
+    height: 70px;
+    width: 60px;
+    cursor: pointer;
+}
+.headerbutton > button{
+    
+    width: 130px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    margin-top: 15px;
+    margin-right: 10px;
+    border: 1px solid grey;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.headerbutton > .secbtn{
+    width: 130px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    margin-top: 15px;
+    margin-right: 10px;
+    border: 1px solid grey;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+/* cart container css starts from here */
+
+
+.cartcontainer{
+    max-height:47.5vw;
+    
+    background-color: #b3b3b320;
+    margin-top: 10px;
+    padding: 20px;
+    overflow: scroll;
+   
+  
+}
+.cartcontainer > .musiccart{
+    display: flex;
+    gap: 30px;
+    max-height: 50vh;
+    width: 50vh;
+    margin-top: 10px;
+
+  
+}
+
+
+.cartcontainer > .musiccart > .mymusic{
+    width: 100%;
+    border: 1px solid white;
+   
+}
+.cartcontainer > .musiccart > .carts{
+    height: 300px;
+    width: 200px;
+    background-color:black;
+    align-items: center;
+    border-radius: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+
+}
+.cartcontainer > .musiccart > .carts:hover{
+    background-color: rgba(211, 211, 211, 0.132);
+}
+
+
+.cartcontainer > .musiccart > .carts > h3{
+    padding: 7px;
+}
+
+.cartcontainer > .musiccart >  .carts > p{
+    padding: 7px;
+}
+.cartcontainer > .musiccart > .carts > img{
+    object-fit: contain;
+    object-fit: contain;
+    height: 197px;
+    padding: 16px;
+    border-radius: 30px;
+    
+}
+
+
+/* last footer css strats drom here */
+
+.cartcontainer >.lastfooter{
+    display: flex;
+}
+
+
+.cartcontainer >.lastfooter >  .lastul{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-top:60px ;
+}
+
+.cartcontainer >.lastfooter >  .lastul > ul{
+    list-style: none;
+  
+}
+
+.cartcontainer >.lastfooter >  .lastul > ul > li{
+  padding: 10px;
+}
+
+.cartcontainer >.lastfooter >  .lastul > ul > li > a{
+    color: rgba(211, 211, 211, 0.257);
+    font-size: 18px;
+    text-decoration: none;
+   
+
+}
+
+
+.cartcontainer >.lastfooter >  .smediaicon{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-top:40px ;
+    justify-content: end;
+}
+
+.cartcontainer > .lastfooter > .smediaicon > .iconbox{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.cartcontainer > .lastfooter > .smediaicon > .iconbox:hover{
+    background-color: rgba(211, 211, 211, 0.389);
+}
+
+.cartcontainer > .lastfooter > .smediaicon > .iconbox > img{
+ height: 20px; 
+ margin: 13px; 
+}
+
+/* sepration css */
+
+.sepration{
+    border: 1px solid rgba(169, 169, 169, 0.228);
+    width: 95%;
+    margin: 50px auto;
+    
+}
+
+.copyright > a{
+    color: rgba(211, 211, 211, 0.257);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.lastline{
+    height: 90px;
+    width: 100%;
+    background-image: linear-gradient(90deg, #af2896, #509bf5); 
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastline > p{
+    padding: 20px;
+    font-weight: 500;
+}
+
+.lastline > button{
+    width: 210px;
+    height: 60px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 35px;
+    background-color: white;
+    color: black;
+    margin-top: 15px;
+    margin-right: 10px;
+    border: 1px solid grey;
+    transition: all 0.5s;
+    cursor: pointer;
+}
